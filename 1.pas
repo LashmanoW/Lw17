@@ -8,7 +8,7 @@ PROCEDURE ReadDigit(VAR F: TEXT; VAR D: INTEGER);
  Если считанный символ не цифравозвращает -1} 
 VAR
   Ch: CHAR;   
-BEGIN 
+BEGIN  {ReadDigit}
   D := -1;
   IF NOT(EOLN(F))
   THEN
