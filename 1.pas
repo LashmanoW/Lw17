@@ -36,7 +36,9 @@ BEGIN  {RDigit}
       ReadDigit(INPUT, I); 
       IF (I <> -1)
       THEN
-        Sum := Sum + I 
+        Sum := Sum + I
+      ELSE
+        WRITELN(I)   
     END;
   WRITELN('Сумма первых встреченных цифр равна ', Sum)
 END.  {RDigit}
